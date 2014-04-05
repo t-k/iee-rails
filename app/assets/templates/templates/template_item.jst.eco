@@ -1,0 +1,3 @@
+<a href="patterns/layout/column-drop.html">
+  <%= @name %>
+</a>
