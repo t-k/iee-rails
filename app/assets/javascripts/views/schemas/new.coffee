@@ -9,9 +9,11 @@ class AP.Views.SchemasNew extends Backbone.Marionette.ItemView
     action: "#action"
     url: "#url"
     output: "#output"
+    outputarea: "#outputarea"
 
   events:
     "submit #form": "createSchema"
+    "click #copyoutput": "outputSelect"
 
   createSchema: (event) ->
     event.preventDefault()
@@ -22,3 +24,8 @@ class AP.Views.SchemasNew extends Backbone.Marionette.ItemView
     action = @ui.action.val()
     el = JST["schemas/output"](name: name, url: url, action: action, method: method)
     @ui.output.text el
+    @ui.outputarea.show();
+
+  outputSelect: (event) ->
+    @ui.output.select()
+
