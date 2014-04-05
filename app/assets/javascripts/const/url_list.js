@@ -14,6 +14,12 @@ var linkTo, api;
     },
     templatesShow: function(id) {
       return this.templates() + "/" + id;
+    },
+    schema: function() {
+      return "schema";
+    },
+    schemaNew: function() {
+      return this.schema() + "/new";
     }
   };
 

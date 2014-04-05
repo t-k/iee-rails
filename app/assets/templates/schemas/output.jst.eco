@@ -1,0 +1,16 @@
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Event",
+    "name": "<%= @name %>",
+    "action": {
+      "@type": "RsvpAction",
+      "actionHandler": {
+        "@type": "HttpActionHandler",
+        "url": "<%= @url %>",
+        "method": "<%= @method %>",
+        "requiredProperty": "rsvpStatus",
+      }
+    }
+  }
+  </script>

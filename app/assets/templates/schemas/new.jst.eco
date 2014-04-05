@@ -1,0 +1,35 @@
+<h1>Create schema</h1>
+<form role="form" acrion"#" id="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Select Action</label>
+    <select class="form-control" id="action">
+        <% for action in schema: %>
+          <option value="<%= action %>"><%= action %></option>
+        <% end %>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="name">
+  </div>
+  <h2>actionHandler</h2>
+  <div class="form-group">
+    <label for="exampleInputEmail1">HTTP METHOD</label>
+    <select class="form-control" id="method">
+        <% for method in methods: %>
+          <option value="<%= method %>"><%= method %></option>
+        <% end %>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="url">URL</label>
+    <input type="url" class="form-control" id="url" placeholder="url" >
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<div>
+    <output >
+<code id="output">
+</code>
+    </output>
+</div>
