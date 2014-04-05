@@ -8,6 +8,12 @@ var linkTo, api;
   URLs = {
     root: function() {
       return "";
+    },
+    templates: function() {
+      return "templates";
+    },
+    templatesShow: function(id) {
+      return this.templates() + "/" + id;
     }
   };
 
