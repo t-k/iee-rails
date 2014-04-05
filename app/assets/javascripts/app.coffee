@@ -14,12 +14,14 @@ window.AP = new Backbone.Marionette.Application
       #   navi: "#myModal"
       #   menu: "#menu"
         main: "#container"
+        header: "#header"
+        footer: "#footer"
       #   footer: "#footer"
       # # set views
-      # AP.header.show(new AP.Views.LayoutsHeader())
+      AP.header.show(new AP.Views.LayoutsHeader())
       # AP.navi.show(new AP.Views.LayoutsNav())
       # AP.menu.show(new AP.Views.LayoutsMenu())
-      # AP.footer.show(new AP.Views.LayoutsFooter())
+      AP.footer.show(new AP.Views.LayoutsFooter())
       # set router
       AP.router = new AP.Routers.Main()
       Backbone.history.start({pushState: true, root: '/'})
