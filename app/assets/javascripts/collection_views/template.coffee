@@ -7,7 +7,7 @@ class AP.CompositeViews.Template extends Backbone.Marionette.CompositeView
     @model ||= new AP.Models.Template()
     @loadJson()
   loadJson: ->
-    jQuery.getJSON "/templates", {}, (json, textStatus) =>
+    jQuery.getJSON "/template_list", {}, (json, textStatus) =>
       @collection.add json.templates
       @model.set("category", json.category)
       @render()
