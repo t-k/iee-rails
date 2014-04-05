@@ -8,6 +8,7 @@
 #= require ./vendor/toastr
 #= require ./vendor/i18n
 #= require ./vendor/jquery.cookie
+#= require ./vendor/medium-editor
 
 #= require_tree ./const
 
