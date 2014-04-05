@@ -9,11 +9,11 @@ window.AP = new Backbone.Marionette.Application
   Routers: {}
   initialize: ->
     AP.addInitializer ->
-      # AP.addRegions
+      AP.addRegions
       #   header: "#header"
       #   navi: "#myModal"
       #   menu: "#menu"
-      #   main: "#container"
+        main: "#container"
       #   footer: "#footer"
       # # set views
       # AP.header.show(new AP.Views.LayoutsHeader())
