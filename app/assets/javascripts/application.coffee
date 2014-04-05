@@ -8,7 +8,6 @@
 #= require ./vendor/toastr
 #= require ./vendor/i18n
 #= require ./vendor/jquery.cookie
-#= require .//bootstrap
 
 #= require_tree ./const
 
@@ -17,7 +16,7 @@
 #= require_tree ./utils
 #= require_tree ./locales
 
-#= require .//ap
+#= require .//app
 #= require_tree ../templates
 #= require_tree ./models
 #= require_tree ./collections
