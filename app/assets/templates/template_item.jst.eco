@@ -1,0 +1,3 @@
+<a href="/templates/<%= @id %>">
+  <%= @name %>
+</a>
