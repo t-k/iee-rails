@@ -7,6 +7,7 @@ window.AP = new Backbone.Marionette.Application
   Views: {}
   Layouts: {}
   Routers: {}
+  CompositeViews: {}
   initialize: ->
     AP.addInitializer ->
       AP.addRegions
@@ -18,7 +19,6 @@ window.AP = new Backbone.Marionette.Application
         footer: "#footer"
       #   footer: "#footer"
       # # set views
-      AP.header.show(new AP.Views.LayoutsHeader())
       # AP.navi.show(new AP.Views.LayoutsNav())
       # AP.menu.show(new AP.Views.LayoutsMenu())
       AP.footer.show(new AP.Views.LayoutsFooter())
